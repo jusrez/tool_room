@@ -4,6 +4,6 @@ class ToolsController < ApplicationController
   end
 
   def show
-    @tool = Toolbox.find(params[:id])
+    @tool = Tool.find(params[:id])
   end
 end
