@@ -1,0 +1,12 @@
+<h1>Tools found in "<%= @toolbox.name %>" toolbox</h1>
+
+<% @tools.each do |tool| %>
+  <%if tool.toolbox_id == @toolbox.id %>
+    <h3><u><%= tool.name %> </u></h3>
+    <p><b>Working Condition? </b><%= tool.working_condition %></p>
+    <p><b>Quantity: </b><%= tool.quantity %></p>
+    <br>
+  <% else %>
+    <% next %>
+  <% end %>
+<% end %>

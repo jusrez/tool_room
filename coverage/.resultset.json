@@ -246,7 +246,7 @@
           1,
           1,
           1,
-          null,
+          1,
           null
         ]
       },
@@ -277,14 +277,11 @@
           null
         ]
       },
-      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/tools_controller.rb": {
+      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/toolbox_tools_controller.rb": {
         "lines": [
           1,
           1,
-          0,
-          null,
-          null,
-          1,
+          2,
           2,
           null,
           null
@@ -297,6 +294,6 @@
         ]
       }
     },
-    "timestamp": 1657572008
+    "timestamp": 1657579973
   }
 }
