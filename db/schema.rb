@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_07_190759) do
+ActiveRecord::Schema.define(version: 2022_07_11_131336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,4 +23,15 @@ ActiveRecord::Schema.define(version: 2022_07_07_190759) do
     t.datetime "updated_at"
   end
 
+  create_table "tools", force: :cascade do |t|
+    t.string "name"
+    t.boolean "working_condition"
+    t.integer "quantity"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.bigint "toolbox_id"
+    t.index ["toolbox_id"], name: "index_tools_on_toolbox_id"
+  end
+
+  add_foreign_key "tools", "toolboxes"
 end
