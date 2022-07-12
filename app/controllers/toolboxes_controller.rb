@@ -1,6 +1,6 @@
 class ToolboxesController < ApplicationController
   def index
-    @toolboxes = Toolbox.all
+    @toolboxes = Toolbox.order_by_recently_created.to_a
   end
 
   def show

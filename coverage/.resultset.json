@@ -260,6 +260,10 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -270,19 +274,15 @@
           null
         ]
       },
-      "/Users/justinramirez/turing/2mod/projects/tool_room/app/models/tool.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/toolbox_tools_controller.rb": {
+      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/toolboxes_controller.rb": {
         "lines": [
           1,
           1,
           2,
-          2,
+          null,
+          null,
+          1,
+          0,
           null,
           null
         ]
@@ -294,6 +294,6 @@
         ]
       }
     },
-    "timestamp": 1657579973
+    "timestamp": 1657591805
   }
 }
