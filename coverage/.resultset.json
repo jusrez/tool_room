@@ -256,13 +256,178 @@
           null
         ]
       },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/spec/features/toolboxes/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/spec/features/toolboxes/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/spec/features/tools/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/spec/features/tools/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/spec/models/toolbox_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/justinramirez/turing/2mod/projects/tool_room/app/models/toolbox.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          2,
+          3,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
           null,
           null
         ]
@@ -270,6 +435,29 @@
       "/Users/justinramirez/turing/2mod/projects/tool_room/app/models/application_record.rb": {
         "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/app/models/tool.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/toolbox_tools_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/application_controller.rb": {
+        "lines": [
           1,
           null
         ]
@@ -282,18 +470,25 @@
           null,
           null,
           1,
-          0,
+          2,
           null,
           null
         ]
       },
-      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/application_controller.rb": {
+      "/Users/justinramirez/turing/2mod/projects/tool_room/app/controllers/tools_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1657591805
+    "timestamp": 1657594512
   }
 }

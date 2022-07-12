@@ -1,6 +1,4 @@
 <h1><%= @toolbox.name %></h1>
-<p><b>ID:</b> <%= @toolbox.id %></p>
 <p><b>Tool Capacity:</b> <%= @toolbox.tool_capacity %></p>
 <p><b>Is this toolbox checked out?</b> <%= @toolbox.checked_out %></p>
-<p><b>Created at:</b> <%= @toolbox.created_at %></p>
-<p><b>Updated at:</b> <%= @toolbox.updated_at %></p>
+<p><b>Tool Count (currently in toolbox): </b><%= @toolbox.count_tools %></p>
