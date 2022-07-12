@@ -8,13 +8,21 @@ RSpec.describe 'Toolboxes Show' do
 
       visit "/toolboxes/#{hammers.id}"
 
-      expect(page).to have_content(hammers.id)
       expect(page).to have_content(hammers.name)
       expect(page).to have_content(hammers.tool_capacity)
       expect(page).to have_content(hammers.checked_out)
-      expect(page).to have_content(hammers.created_at)
-      expect(page).to have_content(hammers.updated_at)
       expect(page).to_not have_content(wrenches.name)
+
+    end
+
+    it 'shows a count of the number of tools associated with this toolbox' do
+      hammers = Toolbox.create!(name: "Hammers", tool_capacity: 5, checked_out: false)
+      hand_hammer = Tool.create!(name: "Hand Hammer", working_condition: true, quantity: 2, toolbox_id: hammers.id)
+      
+
+      visit "toolboxes/#{hammers.id}"
+
+      expect(page).to have_content("Tool Count")
 
     end
   end
