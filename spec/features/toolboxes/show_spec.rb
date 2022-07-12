@@ -65,5 +65,19 @@ RSpec.describe 'Toolboxes Show' do
 
       expect(current_path).to eq('/toolboxes')
     end
+
+    it 'will show a link at the top of the page that takes me to the tools page associated with that toolbox' do
+      hammers = Toolbox.create!(name: "Hammers", tool_capacity: 5, checked_out: false)
+      wrenches = Toolbox.create!(name: "Wrenches", tool_capacity: 11, checked_out: false)
+      hand_hammer = Tool.create!(name: "Hand Hammer", working_condition: true, quantity: 2, toolbox_id: hammers.id)
+      crescent_wrench = Tool.create!(name: "Crescent Wrench", working_condition: true, quantity: 1, toolbox_id: wrenches.id)
+      box_wrench = Tool.create!(name: "Box Wrench", working_condition: true, quantity: 1, toolbox_id: wrenches.id)
+
+      visit "/toolboxes/#{hammers.id}"
+
+      click_link "Tools found in #{hammers.name} toolbox"
+
+      expect(current_path).to eq("/toolboxes/#{hammers.id}/tools")
+    end
   end
 end
