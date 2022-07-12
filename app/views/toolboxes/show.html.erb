@@ -1,4 +1,9 @@
+
 <h1><%= @toolbox.name %></h1>
+
 <p><b>Tool Capacity:</b> <%= @toolbox.tool_capacity %></p>
 <p><b>Is this toolbox checked out?</b> <%= @toolbox.checked_out %></p>
 <p><b>Tool Count (currently in toolbox): </b><%= @toolbox.count_tools %></p>
+<br>
+
+<p><%= link_to "Tools found in #{@toolbox.name} toolbox", "/toolboxes/#{@toolbox.id}/tools" %></p>
