@@ -1,5 +1,8 @@
 class Tool < ApplicationRecord
   belongs_to :toolbox
+  validates_presence_of :name
+  validates_presence_of :quantity
+  validates :working_condition, inclusion: [true, false]
 
   def self.show_true
     where(working_condition: true)
