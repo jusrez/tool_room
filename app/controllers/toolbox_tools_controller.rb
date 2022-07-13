@@ -1,7 +1,11 @@
 class ToolboxToolsController < ApplicationController
   def index
     @toolbox = Toolbox.find(params[:id])
-    @tools = Tool.all
+    if params[:sort] == "alphabetical"
+      @tools = @toolbox.tools.alphabetically
+    else
+      @tools = @toolbox.tools
+    end
   end
 
   def new

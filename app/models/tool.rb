@@ -4,4 +4,8 @@ class Tool < ApplicationRecord
   def self.show_true
     where(working_condition: true)
   end
+
+  def self.alphabetically
+    order(:name)
+  end
 end
