@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get '/toolboxes/:id/tools', to: 'toolbox_tools#index'
   get '/toolboxes/:id/tools/new', to: 'toolbox_tools#new'
   post '/toolboxes/:id/tools', to: 'toolbox_tools#create'
+  get '/tools/:id/edit', to: 'tools#edit'
+  patch '/tools/:id', to: 'tools#update'
   
 end
