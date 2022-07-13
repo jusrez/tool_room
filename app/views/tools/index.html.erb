@@ -2,7 +2,7 @@
 
 <ul>
 <% @tools.each do |tool| %>
-  <h2><li><%= tool.name %></li></h2>
+  <h2><li><%= tool.name %></li> <%= link_to "Edit Tool", "/tools/#{tool.id}/edit" %></h2>
     <ul>
       <li>Tool ID: <%= tool.id %></li>
       <li>Is the tool in working conditon? <%= tool.working_condition %></li>
