@@ -2,7 +2,7 @@
 
 <% @toolboxes.each_with_index do |toolbox, index| %>
 <div id="toolbox-<%= index%>">
-<p><u> <%= toolbox.name %> </u></p>
+<p><u> <%= toolbox.name %> </u> <%= link_to "Edit Toolbox", "/toolboxes/#{toolbox.id}/edit" %> </p>
 <p><b>Created at:</b> <%= toolbox.created_at %> </p>
 </div>
 <% end %>
