@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get '/toolboxes/new', to: 'toolboxes#new'
   post '/toolboxes', to: 'toolboxes#create'
   get '/toolboxes/:id', to: 'toolboxes#show'
+  get '/toolboxes/:id/edit', to: 'toolboxes#edit'
+  patch 'toolboxes/:id', to: 'toolboxes#update'
   get '/toolboxes/:id/tools', to: 'toolbox_tools#index'
+  get '/toolboxes/:id/tools/new', to: 'toolbox_tools#new'
+  post '/toolboxes/:id/tools', to: 'toolbox_tools#create'
   
 end

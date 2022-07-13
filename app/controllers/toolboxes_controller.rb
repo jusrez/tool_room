@@ -3,6 +3,10 @@ class ToolboxesController < ApplicationController
     @toolboxes = Toolbox.order_by_recently_created.to_a
   end
 
+  def show
+    @toolbox = Toolbox.find(params[:id])
+  end
+
   def new
     @toolbox = Toolbox.new
   end
@@ -15,12 +19,18 @@ class ToolboxesController < ApplicationController
     redirect_to '/toolboxes'
   end
 
-  def show
+  def edit
     @toolbox = Toolbox.find(params[:id])
+  end
+
+  def update
+    toolbox = Toolbox.find(params[:id])
+    toolbox.update(toolbox_params)
+    redirect_to "/toolboxes/#{toolbox.id}"
   end
 
   private
   def toolbox_params
-    params.require(:toolbox).permit(:name, :tool_capacity, :checked_out)
+    params.permit(:name, :tool_capacity, :checked_out)
   end
 end
