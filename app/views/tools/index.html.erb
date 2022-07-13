@@ -1,8 +1,7 @@
 <h1>All Tools</h1>
 
-<ul>
 <% @tools.each do |tool| %>
-  <h2><li><%= tool.name %></li> <%= link_to "Edit Tool", "/tools/#{tool.id}/edit" %></h2>
+  <h2><%= tool.name %></h2>
     <ul>
       <li>Tool ID: <%= tool.id %></li>
       <li>Is the tool in working conditon? <%= tool.working_condition %></li>
@@ -11,6 +10,6 @@
       <li>Updated at: <%= tool.updated_at %></li>
       <li>Toolbox ID: <%= tool.toolbox_id %></li>
     </ul>
-      
+  <p><%= link_to "Edit Tool", "/tools/#{tool.id}/edit" %></p>
+  <p><%= link_to "Delete Tool", "/tools/#{tool.id}", method: :delete %>   
 <% end %>
-</ul>

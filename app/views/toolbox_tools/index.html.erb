@@ -5,6 +5,8 @@
     <h3><u><%= tool.name %> </u></h3>
     <p><b>Working Condition? </b><%= tool.working_condition %></p>
     <p><b>Quantity: </b><%= tool.quantity %></p>
+    <p><%= link_to "Edit Tool", "/tools/#{tool.id}/edit" %></p>
+    <p><%= link_to "Delete Tool", "/tools/#{tool.id}", method: :delete %>  
     <br>
   <% else %>
     <% next %>
