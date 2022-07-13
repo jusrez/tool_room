@@ -2,8 +2,10 @@
 
 <% @toolboxes.each_with_index do |toolbox, index| %>
 <div id="toolbox-<%= index%>">
-<p><u> <%= toolbox.name %> </u> <%= link_to "Edit Toolbox", "/toolboxes/#{toolbox.id}/edit" %> </p>
+<p><u> <%= toolbox.name %> </u></p>
 <p><b>Created at:</b> <%= toolbox.created_at %> </p>
+<p><%= link_to "Edit Toolbox", "/toolboxes/#{toolbox.id}/edit" %></p>
+<p><%= link_to "Delete Toolbox", "/toolboxes/#{toolbox.id}", method: :delete %>
 </div>
 <% end %>
 
