@@ -8,4 +8,8 @@ class Tool < ApplicationRecord
   def self.alphabetically
     order(:name)
   end
+
+  def self.filter_by_quantity(quantity)
+    where('quantity > ?', quantity)
+  end
 end

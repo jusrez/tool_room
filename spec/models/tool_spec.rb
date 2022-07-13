@@ -24,5 +24,16 @@ RSpec.describe Tool do
 
       expect(Tool.alphabetically.to_a).to eq([box_wrench, crescent_wrench, hand_hammer])
     end
+
+    it 'only shows tools that have a larger quantity than the number provided' do
+      hammers = Toolbox.create!(name: "Hammers", tool_capacity: 25, checked_out: false)
+      hand_hammer = Tool.create!(name: "Hand Hammer", working_condition: false, quantity: 3, toolbox_id: hammers.id)
+      mjolnir = Tool.create!(name: "Mjolnir", working_condition: true, quantity: 1, toolbox_id: hammers.id)
+      mallet = Tool.create!(name: "Mallet", working_condition: true, quantity: 4, toolbox_id: hammers.id)
+
+      expect(Tool.filter_by_quantity(2).to_a).to eq([hand_hammer, mallet])
+
+           
+    end
   end
 end

@@ -3,6 +3,8 @@ class ToolboxToolsController < ApplicationController
     @toolbox = Toolbox.find(params[:id])
     if params[:sort] == "alphabetical"
       @tools = @toolbox.tools.alphabetically
+    elsif params[:quantity]
+      @tools = @toolbox.tools.filter_by_quantity(params[:quantity])
     else
       @tools = @toolbox.tools
     end
