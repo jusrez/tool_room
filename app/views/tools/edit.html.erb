@@ -1,0 +1,15 @@
+<%= form_with url: "/tools/#{@tool.id}", method: :patch, local: true do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %>
+
+  <%= f.label :working_condition %>:
+  <%= f.text_field :working_condition %>
+
+  <%= f.label :quantity %>:
+  <%= f.text_field :quantity %>
+
+  <%= f.label :toolbox_id %>:
+  <%= f.text_field :toolbox_id %>
+
+  <%= f.submit "Update Tool" %>
+<% end %>

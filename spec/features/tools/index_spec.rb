@@ -64,4 +64,15 @@ RSpec.describe 'Tools Index' do
 
     expect(current_path).to eq('/toolboxes')
   end
+
+  it 'will show a link next to a tool that will take it to the edit page' do
+    hammers = Toolbox.create!(name: "Hammers", tool_capacity: 5, checked_out: false)
+    hand_hammer = Tool.create!(name: "Hand Hammer", working_condition: true, quantity: 2, toolbox_id: hammers.id)
+
+    visit '/tools'
+
+    click_link 'Edit Tool'
+
+    expect(current_path).to eq("/tools/#{hand_hammer.id}/edit")
+  end
 end

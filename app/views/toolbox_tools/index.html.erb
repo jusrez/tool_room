@@ -5,8 +5,19 @@
     <h3><u><%= tool.name %> </u></h3>
     <p><b>Working Condition? </b><%= tool.working_condition %></p>
     <p><b>Quantity: </b><%= tool.quantity %></p>
+    <p><%= link_to "Edit Tool", "/tools/#{tool.id}/edit" %></p>
+    <p><%= link_to "Delete Tool", "/tools/#{tool.id}", method: :delete %>  
     <br>
   <% else %>
     <% next %>
   <% end %>
 <% end %>
+
+<p> <%= form_with url: "/toolboxes/#{@toolbox.id}/tools?quantity=#{:quantity}", method: :get, local: true, skip_enforcing_utf8:true do |f| %>
+<%= f.label :quantity %>
+<%= f.number_field :quantity %>
+<%= f.submit "Only show tools with more than this number in quantity", name: nil %>
+<% end %></p>
+
+<%= link_to "Create Tool", "/toolboxes/#{@toolbox.id}/tools/new" %>
+<%= link_to "Sort tools in alphabetical order", "toolboxes/#{@toolbox.id}/tools?sort=alphabetical" %>

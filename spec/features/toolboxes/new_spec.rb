@@ -17,7 +17,7 @@ RSpec.describe 'New Toolbox' do
 
         fill_in 'Name', with: 'Drills'
         fill_in 'Tool capacity', with: '4'
-        fill_in 'Checked out?', with: 'false'
+        fill_in 'Checked out', with: 'false'
         click_on 'Create Toolbox'
 
         expect(current_path).to eq('/toolboxes')
