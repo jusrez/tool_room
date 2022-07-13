@@ -29,6 +29,11 @@ class ToolboxesController < ApplicationController
     redirect_to "/toolboxes/#{toolbox.id}"
   end
 
+  def destroy
+    Toolbox.destroy(params[:id])
+    redirect_to "/toolboxes"
+  end
+
   private
   def toolbox_params
     params.permit(:name, :tool_capacity, :checked_out)

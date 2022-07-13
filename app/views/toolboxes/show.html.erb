@@ -9,3 +9,5 @@
 <p><%= link_to "Tools found in #{@toolbox.name} toolbox", "/toolboxes/#{@toolbox.id}/tools" %></p>
 
 <p><%= link_to "Update Toolbox", "/toolboxes/#{@toolbox.id}/edit" %></p>
+
+<p><%= link_to "Delete Toolbox", "/toolboxes/#{@toolbox.id}", method: :delete %>

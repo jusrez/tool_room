@@ -255,6 +255,7 @@
           1,
           1,
           1,
+          1,
           null,
           null
         ]
@@ -296,6 +297,25 @@
           1,
           null,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/justinramirez/turing/2mod/projects/tool_room/spec/features/toolboxes/destroy_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -816,11 +836,11 @@
           1,
           null,
           1,
-          16,
+          17,
           null,
           null,
           1,
-          8,
+          9,
           null,
           null,
           null,
@@ -894,11 +914,23 @@
         "lines": [
           1,
           1,
-          15,
+          16,
           null,
           null,
           1,
-          5,
+          6,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
           null,
           null,
           1,
@@ -907,17 +939,10 @@
           null,
           1,
           1,
-          null,
+          1,
           1,
           null,
-          1,
           null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          1,
           1,
           1,
           1,
@@ -931,6 +956,6 @@
         ]
       }
     },
-    "timestamp": 1657732306
+    "timestamp": 1657737697
   }
 }
