@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/tools/:id', to: 'tools#show'
   get '/tools/:id/edit', to: 'tools#edit'
   patch '/tools/:id', to: 'tools#update'
+  delete '/tools/:id', to: 'tools#destroy'
   get '/toolboxes', to: 'toolboxes#index'
   get '/toolboxes/new', to: 'toolboxes#new'
   post '/toolboxes', to: 'toolboxes#create'
